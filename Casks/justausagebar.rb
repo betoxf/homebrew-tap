@@ -15,6 +15,9 @@ cask "justausagebar" do
     # Remove quarantine flag so Gatekeeper doesn't block the unsigned app
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/JustaUsageBar.app"]
+    # Launch the app immediately after install
+    system_command "/usr/bin/open",
+                   args: ["-a", "#{appdir}/JustaUsageBar.app"]
   end
 
   zap trash: [
