@@ -1,0 +1,21 @@
+# Homebrew Tap
+
+Homebrew formulae and casks by betoxf.
+
+## Installation
+
+```bash
+brew tap betoxf/tap
+```
+
+## Available Casks
+
+| Cask | Description |
+|------|-------------|
+| `justausagebar` | Menu bar app showing Claude and Codex usage statistics |
+
+### Install Just A Usage Bar
+
+```bash
+brew install --cask justausagebar
+```
