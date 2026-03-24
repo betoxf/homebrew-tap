@@ -8,6 +8,18 @@ Homebrew formulae and casks by betoxf.
 brew tap betoxf/tap
 ```
 
+## Available Formulae
+
+| Formula | Description |
+|---------|-------------|
+| `xatlas` | xatlas CLE runtime and pairing CLI |
+
+### Install xatlas CLE
+
+```bash
+brew install betoxf/tap/xatlas
+```
+
 ## Available Casks
 
 | Cask | Description |
