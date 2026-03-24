@@ -1,9 +1,8 @@
 class Xatlas < Formula
   desc "xatlas CLE runtime and pairing CLI"
   homepage "https://github.com/betoxf/xatlas"
-  url "https://github.com/betoxf/xatlas.git",
-      using: GitDownloadStrategy,
-      revision: "5db8dba03606149c391f196389dbb5f359ba1cf2"
+  url "https://github.com/betoxf/xatlas/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "b2df6c9bed4be0c38f18f8790601895682c72e638db425ef407f25fea63f9109"
   version "0.2.0"
   license "ISC"
 
