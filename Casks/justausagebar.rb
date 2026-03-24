@@ -1,6 +1,6 @@
 cask "justausagebar" do
-  version "1.1.0"
-  sha256 "c2e62731d5d46d5aa8d2651b221f59e059fe7f029913b412f198e6bec3e62e20"
+  version "1.1.1"
+  sha256 "e6781568ab672d6da566c3b9f2927a972b68fc0d3a560d3699154d49864f0829"
 
   url "https://github.com/betoxf/JustaUsageBar/releases/download/v#{version}/JustaUsageBar.zip"
   name "Just A Usage Bar"
@@ -14,7 +14,7 @@ cask "justausagebar" do
   postflight do
     # Remove quarantine flag so Gatekeeper doesn't block the unsigned app
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/JustaUsageBar.app"]
+                   args: ["-c", "#{appdir}/JustaUsageBar.app"]
     # Launch the app immediately after install
     system_command "/usr/bin/open",
                    args: ["-a", "#{appdir}/JustaUsageBar.app"]
