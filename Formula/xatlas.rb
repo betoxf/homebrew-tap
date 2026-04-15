@@ -1,9 +1,9 @@
 class Xatlas < Formula
   desc "xatlas CLE runtime and pairing CLI"
-  homepage "https://github.com/betoxf/xatlas"
-  url "https://github.com/betoxf/xatlas/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "b2df6c9bed4be0c38f18f8790601895682c72e638db425ef407f25fea63f9109"
-  version "0.2.0"
+  homepage "https://github.com/betoxf/xatlas-cle"
+  url "https://github.com/betoxf/xatlas-cle/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "fed2e98d86fa5ea9ededa9329f3fd2b0e1615d219a3669d9a3c6ad21d28b1600"
+  version "0.2.1"
   license "ISC"
 
   depends_on "node"
