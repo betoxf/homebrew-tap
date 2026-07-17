@@ -1,13 +1,13 @@
 cask "usagebar" do
-  version "1.6.2"
-  sha256 "2aa8052bd61cf0feaa4f7c141bfb4df2ccdc5e3f77ba8ac4b9e017d47be83e2e"
+  version "1.7.0"
+  sha256 "c8316e4c2edd524207218f886629f33bbd4294f6702ab0314453883ee9276275"
 
   url "https://github.com/betoxf/Usagebar/releases/download/v#{version}/Usagebar.zip"
   name "Usagebar"
-  desc "Menu bar app showing Claude and Codex usage statistics"
+  desc "Menu bar app showing Claude, Codex, and KimiCode usage statistics"
   homepage "https://github.com/betoxf/Usagebar"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Usagebar.app"
 
@@ -18,9 +18,11 @@ cask "usagebar" do
                    args: ["-a", "#{appdir}/Usagebar.app"]
   end
 
+  uninstall quit: "bullfigherstudios.JustaUsageBar"
+
   zap trash: [
     "~/Library/Application Support/JustaUsageBar",
-    "~/Library/Preferences/bullfigherstudios.JustaUsageBar.plist",
     "~/Library/Caches/bullfigherstudios.JustaUsageBar",
+    "~/Library/Preferences/bullfigherstudios.JustaUsageBar.plist",
   ]
 end
