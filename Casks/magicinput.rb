@@ -9,6 +9,8 @@ cask "magicinput" do
   desc "Share one keyboard and mouse with a Windows PC"
   homepage "https://github.com/betoxf/Magicinput"
 
+  disable! date: "2026-10-18", because: "is now distributed at https://bullfighterstudio.com/magicinput"
+
   depends_on macos: :ventura
 
   app "MagicInput.app"
